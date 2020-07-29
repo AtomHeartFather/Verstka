@@ -1,0 +1,41 @@
+/* * {
+	border: 1px solid gray;
+} 
+ */
+.header {
+position: absolute;
+width: 1920px;
+height: 62px;
+left: 0px;
+top: 0px;
+background: #075CB5;
+}
+
+.logo {
+	min-width: 1110px;
+}
+
+.main {
+	min-width: 1110px;
+	padding-top: 96px;
+}
+.buttons {
+	min-width: 1110px;
+}
+
+.block1 {
+	max-width: 1110px;
+}
+
+.card-img {
+	width: 253px;
+	height: 140px;
+}
+.incard {
+	width: 255px;
+	/* margin: 10px !important; */
+	/*padding: 20px !important;*/
+}
+.card {
+	border-style:none;
+}
