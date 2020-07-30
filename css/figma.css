@@ -1,7 +1,7 @@
 /* * {
 	border: 1px solid gray;
 } 
- */
+  */
 .header {
 position: absolute;
 width: 1920px;
@@ -19,9 +19,9 @@ background: #075CB5;
 	min-width: 1110px;
 	padding-top: 96px;
 }
-.buttons {
+/* .buttons {
 	min-width: 1110px;
-}
+} */
 
 .block1 {
 	max-width: 1110px;
@@ -38,4 +38,10 @@ background: #075CB5;
 }
 .card {
 	border-style:none;
+}
+.upeg {
+	z-index: 999;
+}
+.downeg {
+	z-index: -100;
 }
