@@ -14,100 +14,38 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    
-    <!-- синий хидер -->
-    <div class="header downeg">
-    </div>
 
-    <!-- лого -->
-    <div class="container-lg mt-3">
-	    	<img src="img/Logo.png" alt="Альтопромо логотип"><img class="pl-1" src="img/Верстка.png" alt="верстка">
-    </div>
+	
+	<!-- хидер -->
+	<header class="header">
+	    <div class="container d-flex h-100">
+	        <div class="logo">
+	        		<a href="/">
+	                	<img src="img/Logo.png" alt="Альтопромо">
+	            	</a>
+	            	<span class="logo-text align-middle pl-1 pt-1"> - ВЕРСТКА</span>
+	        </div>
+	    </div>
 
-		<!-- кнопки -->
-		<div class="container mt-5">
-			<div class="row">
-				<div class="col-sm-12 col-md-4 col-lg-4 mb-1">
-					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#SmallModalWindow"><nobr>Маленькое модальное окно</nobr></button>
-				</div>
-				<div class="col-sm-12 col-md-3 offset-md-1 col-lg-2 offset-lg-2 mb-1">
-					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalWindow"><nobr>Модальное окно</nobr></button>
-				</div>
-				<div class="col-sm-12 col-md-4 col-lg-4 mb-1">
-					<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#LargeModalWindow"><nobr>Большое модальное окно</nobr></button>
-				</div>
+    </header>
+		
+
+		<div class="container mt-5 container-btns">
+			<div class="d-flex bd-highlight mb-3 btns">
+			  <div class="mr-md-auto p-2 bd-highlight">
+			     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#SmallModalWindow"><nobr>Маленькое модальное окно</nobr></button>
+			  </div>
+			  <div class="p-2 bd-highlight">
+			  	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalWindow"><nobr>Модальное окно</nobr></button>
+			  </div>
+			  <div class="p-2 bd-highlight">
+			  	<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#LargeModalWindow"><nobr>Большое модальное окно</nobr></button>
+			  </div>
 			</div>
 		</div>
 
-	<!-- модальный окна -->
-	<div class="modal fade" id="ModalWindow" tabindex="-1" role="dialog" aria-labelledby="ModalWindowLabel" aria-hidden="true">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h5 class="modal-title" id="ModalWindowLabel">New message</h5>
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">&times;</span>
-	        </button>
-	      </div>
-	      <div class="modal-body">
-	        <form>
-	          <div class="form-group">
-	            <label for="recipient-name" class="col-form-label">Recipient:</label>
-	            <input type="text" class="form-control" id="recipient-name">
-	          </div>
-	          <div class="form-group">
-	            <label for="message-text" class="col-form-label">Message:</label>
-	            <textarea class="form-control" id="message-text"></textarea>
-	          </div>
-	        </form>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-	        <button type="button" class="btn btn-primary">Send message</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-		
-	<div class="modal fade" id="SmallModalWindow" tabindex="-1" role="dialog" aria-labelledby="SmallModalWindowLabel" aria-hidden="true">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h5 class="modal-title" id="SmallModalWindowLabel">New message</h5>
-	        
-	      </div>
-	      <div class="modal-body">
-	        <p>One fine body</p>
-	      </div>
-	   
-	    </div>
-	  </div>
-	</div>
-
-	<div class="modal fade bd-example-modal-lg" id="LargeModalWindow" tabindex="-1" role="dialog" aria-labelledby="LargeModalWindowLabel" aria-hidden="true">
-	  <div class="modal-dialog modal-lg">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h5 class="modal-title" id="LargeModalWindowLabel">Modal title</h5>
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">&times;</span>
-	        </button>
-	      </div>
-	      <div class="modal-body">
-	        <p>One fine body</p>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
-	        <button type="button" class="btn btn-primary">Save change</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>	
-		
-
-			<!-- 1 блок -->
-			<div class="block1 container mt-5 ">
-				<div class="row ml-2 mr-2">
+			<div class="container mt-5">
+				<div class="row p-3">
 					<h2>Container</h2>
 					<p class="text-left mt-2">
 						Это базовый элемент в Bootstrap и они необходимы при использовании нашей стандартной сеточной системы. Контейнеры используются для размещения в них содержимого, дополнений и (иногда) центрирования содержимого внутри них. Хотя контейнеры могут быть вложенными, большинство макетов не требуют вложенного контейнера.</br></br> В Bootstrap используется три разных типа контейнеров:</br>
@@ -123,6 +61,7 @@
 
 			<!-- 2 блок Сетка-->
 			<div class="block2 container mt-5">
+				<h3>Heading Section</h3>
 				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
 				  <div class="col mb-4">
 				    <div class="card border">
@@ -203,7 +142,7 @@
 
 
 			<!-- 3 блок Таблица-->
-			<div class="block3 container mt-5">
+			<div class="block3 container mt-5 mb-5">
 				<table class="table">
 				  <thead>
 				    <tr>
@@ -273,7 +212,7 @@
 			</div>
 	
 			<!-- 4 блок Сетка 2-->
-			<div class="block2 container mt-5">
+			<div class="block4 container mt-5">
 				<div class="row">
 				  <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
 				    <div class="card">
@@ -391,28 +330,109 @@
 			</div>
 
 			<!-- 5 блок Pills-->
-			<div class="block5 container mt-5 pl-0 pr-0">
+			<div class="block5 container mt-5 mb-5">
 				<h3>Pills</h3>
-				<ul class="nav nav-pills">
+				<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
 				  <li class="nav-item">
-				    <a class="nav-link active" href="#">Active</a>
+				    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link" href="#">Link</a>
+				    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link" href="#">Link</a>
+				    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
 				  </li>
 				  <li class="nav-item">
 				    <a class="nav-link disabled" href="#">Disabled</a>
 				  </li>
 				</ul>
-				<p class="text-left"></br>
-				Навигация в Bootstrap имеет общую для подобного типа элементов разметку, от базового класса .nav до активных и «выключенных» состояний. Заменяйте классы-модификаторы для переключения между стилями.</br></br>
-				Базовый компонент класса .nav создан на флексбоксе, что обеспечивает хорошую базу для создания всех типов навигационных компонентов. В него входят несколько стилей, которые «перебивают» остальные (для работы со списками), добавлены паддинги ссылок для увеличения «зоны клика», и базовые стили «выключенных» состояний.
-				</p>
-			</div>	
+				<div class="tab-content" id="pills-tabContent">
+				  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+				    <p class="text-left"></br>
+					Навигация в Bootstrap имеет общую для подобного типа элементов разметку, от базового класса .nav до активных и «выключенных» состояний. Заменяйте классы-модификаторы для переключения между стилями.</br></br>
+					Базовый компонент класса .nav создан на флексбоксе, что обеспечивает хорошую базу для создания всех типов навигационных компонентов. В него входят несколько стилей, которые «перебивают» остальные (для работы со списками), добавлены паддинги ссылок для увеличения «зоны клика», и базовые стили «выключенных» состояний.
+					</p>
+					</div>
+				  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+				  	<p class="text-left"></br>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea deserunt delectus corporis dignissimos veniam, ullam eos, cum tenetur nisi possimus, laboriosam impedit accusamus eum facilis minus aperiam quisquam cumque, minima.
+					</p>
+				  </div>
+				  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+				  	<p class="text-left"></br>
+					Перед тем как приступить к выполнению задачи, нужно попросить куратора поднять VDS.Пока куратор поднимает VDS, стоит прочитать следующие статьи.Обычно мы используем adminer как web-интерфейс для администрирования СУБД MySQL.Сервер поднимается полностью с нуля, используется чистый Ubuntu
+					</p>
+				  </div>
+				</div>
+			</div>
+
+	<!-- модальныt окна -->
+	<div class="modal fade" id="ModalWindow" tabindex="-1" role="dialog" aria-labelledby="ModalWindowLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="ModalWindowLabel">New message</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <form>
+	          <div class="form-group">
+	            <label for="recipient-name" class="col-form-label">Recipient:</label>
+	            <input type="text" class="form-control" id="recipient-name">
+	          </div>
+	          <div class="form-group">
+	            <label for="message-text" class="col-form-label">Message:</label>
+	            <textarea class="form-control" id="message-text"></textarea>
+	          </div>
+	        </form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save change</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 		
+	<div class="modal fade" id="SmallModalWindow" tabindex="-1" role="dialog" aria-labelledby="SmallModalWindowLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-sm" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="SmallModalWindowLabel">Small modal</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <p>One fine body</p>
+	      </div>
+	   
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade bd-example-modal-lg" id="LargeModalWindow" tabindex="-1" role="dialog" aria-labelledby="LargeModalWindowLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="LargeModalWindowLabel">Modal title</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <p>One fine body</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save change</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>	
+
 	<script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
